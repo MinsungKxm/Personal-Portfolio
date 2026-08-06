@@ -3,6 +3,7 @@ import './App.css'
 import ProjectCard from "./components/ProjectCard.jsx";
 import AboutSection from './components/AboutSection'
 import InfoCard from "./components/InfoCard.jsx";
+import profileImg from "./assets/Me.PNG";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -40,7 +41,9 @@ function App() {
                 <path d="M4 8a2 2 0 0 1 2-2h1.2l.9-1.5A1.5 1.5 0 0 1 9.4 3.7h5.2a1.5 1.5 0 0 1 1.3.8L16.8 6H18a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8z"/>
                 <circle cx="12" cy="13" r="3.4"/>
               </svg>
-              <span>Add photo</span>
+              <span>
+                <img src={profileImage} alt="Minsung Kim" />
+              </span>
             </div>
           </div>
 
