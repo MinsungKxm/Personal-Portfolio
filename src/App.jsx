@@ -42,7 +42,7 @@ function App() {
                 <circle cx="12" cy="13" r="3.4"/>
               </svg>
               <span>
-                <img src={profileImage} alt="Minsung Kim" />
+                <img src={profileImg} alt="Minsung Kim" />
               </span>
             </div>
           </div>
