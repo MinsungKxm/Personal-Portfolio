@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;

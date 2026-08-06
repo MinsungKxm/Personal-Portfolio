@@ -16,11 +16,10 @@ function App() {
 
         <nav className="links">
           <a href="#" className="active">Home</a>
-          <a href="#">About</a>
-          <a href="#">Projects</a>
-          <a href="#">Testimonials</a>
-          <a href="#">Blogs</a>
-          <a href="#">Contact</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
         </nav>
 
         <div className="nav-right">
@@ -69,7 +68,7 @@ function App() {
               Download CV
             </a>
 
-            <a href="#" className="btn btn-secondary">
+            <a href="#projects" className="btn btn-secondary">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/>
               </svg>
@@ -94,10 +93,10 @@ function App() {
 
         <div className="scroll-tick"></div>
       </section>
-
-      <AboutSection />
-
-      <section className="projects">
+      <section id="about">
+        <AboutSection />
+      </section>
+      <section id="projects" className="projects">
         <h2 className="projects-heading">My Projects</h2>
 
         <div className="projects-grid">
@@ -123,7 +122,7 @@ function App() {
           />
         </div>
       </section>
-      <section className="experience">
+      <section id="experience" className="experience">
         <h2 className="projects-heading">Experience & Education</h2>
 
         <div className="projects-grid">
