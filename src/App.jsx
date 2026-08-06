@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import './App.css'
+import ProjectCard from "./components/ProjectCard.jsx";
+import AboutSection from './components/AboutSection'
+import InfoCard from "./components/InfoCard.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -8,7 +11,7 @@ function App() {
     <div>
       <header className="site-nav">
         <div className="logo">
-          Your <span className="accent">Name</span>
+          Minsung <span className="accent"> Kim</span>
         </div>
 
         <nav className="links">
@@ -29,7 +32,7 @@ function App() {
       </header>
 
       <section className="hero">
-        <div className="hero-watermark">YN</div>
+        <div className="hero-watermark">MK</div>
 
         <div className="hero-content">
           <div className="avatar-wrap">
@@ -42,15 +45,20 @@ function App() {
             </div>
           </div>
 
-          <div className="role-pill">Software Developer</div>
+          <div className="role-pill">
+            Computer Science Student • University of Toronto
+          </div>
 
           <h1 className="headline">
-            Talk is cheap.<br />
-            Show me the code.
+            Building practical software
+            <br />
+            that solves real problems.
           </h1>
 
           <p className="subtext">
-            I design and build beautifully simple things, and I love what I do.
+            I'm a second-year Computer Science student at the University of Toronto
+            with an interest in full-stack web development, UI/UX design, and
+            building software that makes everyday tasks easier.
           </p>
 
           <div className="cta-row">
@@ -70,10 +78,6 @@ function App() {
           </div>
 
           <div className="social-row">
-            <a href="#" aria-label="Facebook">
-              Facebook
-            </a>
-
             <a href="#" aria-label="LinkedIn">
               LinkedIn
             </a>
@@ -81,10 +85,72 @@ function App() {
             <a href="#" aria-label="GitHub">
               GitHub
             </a>
+
+            <a href="#" aria-label="Email">
+              Email
+            </a>
           </div>
         </div>
 
         <div className="scroll-tick"></div>
+      </section>
+
+      <AboutSection />
+
+      <section className="projects">
+        <h2 className="projects-heading">My Projects</h2>
+
+        <div className="projects-grid">
+          <ProjectCard
+            image="https://placehold.co/600x375/1d1e22/6c6e75?text=Student+Life+Tracker"
+            title="UofT Student Life Tracker"
+            description="A full-stack web application that helps University of Toronto students organize schedules, deadlines, and campus resources. Built with React, Express.js, PostgreSQL, and deployed on Render."
+            link="https://uoft-student-life-tracker.onrender.com/"
+          />
+
+          <ProjectCard
+            image="https://placehold.co/600x375/1d1e22/6c6e75?text=Portfolio"
+            title="Personal Portfolio Website"
+            description="A responsive portfolio website built with React to showcase my projects, technical skills, and experience while learning modern frontend development."
+            link="#"
+          />
+
+          <ProjectCard
+            image="https://placehold.co/600x375/1d1e22/6c6e75?text=Coming+Soon"
+            title="More Projects Coming Soon"
+            description="I'm continuously building new software projects to strengthen my skills in web development, software engineering, and computer science."
+            link="#"
+          />
+        </div>
+      </section>
+      <section className="experience">
+        <h2 className="projects-heading">Experience & Education</h2>
+
+        <div className="projects-grid">
+          <InfoCard
+            category="Experience"
+            title="ResNet Technical Assistant"
+            subtitle="University of Toronto"
+            date="May 2026 – Present"
+            description="Provide technical support for students experiencing network connectivity issues, including Wi-Fi, Ethernet, and device registration. Troubleshoot campus internet problems while delivering professional customer service."
+          />
+
+          <InfoCard
+            category="Education"
+            title="University of Toronto"
+            subtitle="Honours B.Sc. Computer Science Specialist"
+            date="Expected Graduation: 2029"
+            description="Currently pursuing a Computer Science Specialist at the University of Toronto, with interests in full-stack software development, UI/UX design, and artificial intelligence."
+          />
+
+          <InfoCard
+            category="Award"
+            title="International Scholar Award"
+            subtitle="University of Toronto"
+            date="$50,000 Entrance Scholarship"
+            description="Awarded a $50,000 entrance scholarship in recognition of strong academic achievement and leadership."
+          />
+        </div>
       </section>
     </div>
   )
