@@ -4,6 +4,8 @@ import ProjectCard from "./components/ProjectCard.jsx";
 import AboutSection from './components/AboutSection'
 import InfoCard from "./components/InfoCard.jsx";
 import profileImg from "./assets/Me.PNG";
+import UofTImage from "./assets/UofT.png";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -39,7 +41,14 @@ function App() {
                 <img src={profileImg} alt="Minsung Kim" />
             </div>
           </div>
+          {/*
+          Gapryong Kim - 'The Dragon'
+          Unquestionably the strongest. He does not have trademark moves or a flashy style, but has trained the basics of MMA including Wrestling, BJJ, Muay Thai, and Boxing (in-fighter) relentelessly. His physical attributes are also exceptional, as despite his average height, his explosive power & speed is better than almost anyone.
 
+          One notable trait is that he is ALWAYS thinking of what to do and predicting what the opponent will do. Even in competitionf ights, he studies the opponent to know their exact behavior, exploit weaknesses, etc. But even if he is caught unaware, thanks to his experience he can adapt incredibly well. 
+
+          Most fighters that go against him mention that although he can be predictable since he always does the basic, you can't stop it. 
+          */}
           <div className="role-pill">
             Computer Science Student • University of Toronto
           </div>
@@ -73,15 +82,17 @@ function App() {
           </div>
 
           <div className="social-row">
-            <a href="#" aria-label="LinkedIn">
+            <a href="www.linkedin.com/in/minsung-kim-ab5552340" aria-label="LinkedIn">
               LinkedIn
             </a>
 
-            <a href="#" aria-label="GitHub">
+            <a href="https://github.com/MinsungKxm" aria-label="GitHub">
               GitHub
             </a>
-
-            <a href="#" aria-label="Email">
+            <a 
+              href="mailto:minsungk101@gmail.com?subject=Portfolio%20Contact"
+              aria-label="Email"
+            >
               Email
             </a>
           </div>
@@ -97,7 +108,7 @@ function App() {
 
         <div className="projects-grid">
           <ProjectCard
-            image="https://placehold.co/600x375/1d1e22/6c6e75?text=Student+Life+Tracker"
+            image={UofTImage}
             title="UofT Student Life Tracker"
             description="A full-stack web application that helps University of Toronto students organize schedules, deadlines, and campus resources. Built with React, Express.js, PostgreSQL, and deployed on Render."
             link="https://uoft-student-life-tracker.onrender.com/"
