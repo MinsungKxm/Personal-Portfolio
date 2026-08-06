@@ -32,18 +32,11 @@ function App() {
       </header>
 
       <section className="hero">
-        <div className="hero-watermark">MK</div>
 
         <div className="hero-content">
           <div className="avatar-wrap">
             <div className="avatar">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-                <path d="M4 8a2 2 0 0 1 2-2h1.2l.9-1.5A1.5 1.5 0 0 1 9.4 3.7h5.2a1.5 1.5 0 0 1 1.3.8L16.8 6H18a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8z"/>
-                <circle cx="12" cy="13" r="3.4"/>
-              </svg>
-              <span>
                 <img src={profileImg} alt="Minsung Kim" />
-              </span>
             </div>
           </div>
 
