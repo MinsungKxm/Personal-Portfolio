@@ -7,6 +7,7 @@ import profileImg from "./assets/Me.PNG";
 import UofTImage from "./assets/UofT.png";
 import StarImage from "./assets/Constellation.jpg";
 import resume from "./assets/Minsung_s_Resume.pdf";
+import FightImage from "./assets/fight.png.webp";
 
 function App() {
   const [count, setCount] = useState(0);
