@@ -27,10 +27,6 @@ function App() {
         </nav>
 
         <div className="nav-right">
-          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-            <path d="M20.8 8.6c0-3.1-2.5-5.4-5.4-5.4-1.8 0-3.4.9-4.4 2.3-1-1.4-2.6-2.3-4.4-2.3-2.9 0-5.4 2.3-5.4 5.4 0 6 9.8 11.8 9.8 11.8s9.8-5.8 9.8-11.8z"/>
-          </svg>
-          <span>3</span>
         </div>
       </header>
 
@@ -114,14 +110,14 @@ function App() {
             title="Hack Canada "
             subtitle="SPUR Innovation"
             date="March 2026"
-            description="During this hackathon at Waterloo, we built Transit Guardian."
+            description="Participated in Hack Canada, a 36-hour hackathon focused on solving real Canadian challenges. Built Transit Guardian, a full-stack AI safety monitoring system using React, FastAPI, WebSockets, and YOLOv8-Pose to detect hazards from live camera feeds and provide real-time incident alerts."
           />
           <InfoCard
             category="Experience"
             title="Hack the Student Life 2026"
-            subtitle="AWS Organization"
+            subtitle="AWS Services"
             date="Placeholder Date"
-            description="Placeholder description of responsibilities and accomplishments in this role."
+            description="Our team participated in the Hack the Student Life hackathons, hosted by UofT and AWS services. The theme of the hackathon was solving a problem that can help UofT students or staff using AWS. We created Cluster Grade AI, where the teaching staff, like TAs, can input several works from students to identify the most common errors and where they are, saving time on their grading."
           />
         </div>
       </section>
@@ -168,9 +164,9 @@ function App() {
 
           <ProjectCard
             image={FightImage}
-            title="Transit Guardian"
+            title="WatchLine"
             description="Built a full-stack AI safety monitoring system with React, FastAPI, and WebSocket to detect hazards from live camera feeds. Integrated YOLOv8-Pose to detect falls, aggression, and erratic movement, with real-time alerts, automated video clips, and AI-generated dispatch summaries using Google Gemini."
-            link="https://github.com/MinsungKxm/SubwaySafety"
+            link="https://github.com/MinsungKxm/WatchLine"
           />
         </div>
       </section>
