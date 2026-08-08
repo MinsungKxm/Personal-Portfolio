@@ -5,7 +5,8 @@ import AboutSection from './components/AboutSection'
 import InfoCard from "./components/InfoCard.jsx";
 import profileImg from "./assets/Me.PNG";
 import UofTImage from "./assets/UofT.png";
-
+import StarImage from "./assets/Constellation.jpg";
+import resume from "./assets/Minsung_s_Resume.pdf";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,7 +23,6 @@ function App() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
         </nav>
 
         <div className="nav-right">
@@ -41,14 +41,6 @@ function App() {
                 <img src={profileImg} alt="Minsung Kim" />
             </div>
           </div>
-          {/*
-          Gapryong Kim - 'The Dragon'
-          Unquestionably the strongest. He does not have trademark moves or a flashy style, but has trained the basics of MMA including Wrestling, BJJ, Muay Thai, and Boxing (in-fighter) relentelessly. His physical attributes are also exceptional, as despite his average height, his explosive power & speed is better than almost anyone.
-
-          One notable trait is that he is ALWAYS thinking of what to do and predicting what the opponent will do. Even in competitionf ights, he studies the opponent to know their exact behavior, exploit weaknesses, etc. But even if he is caught unaware, thanks to his experience he can adapt incredibly well. 
-
-          Most fighters that go against him mention that although he can be predictable since he always does the basic, you can't stop it. 
-          */}
           <div className="role-pill">
             Computer Science Student • University of Toronto
           </div>
@@ -66,11 +58,11 @@ function App() {
           </p>
 
           <div className="cta-row">
-            <a href="#" className="btn btn-primary">
+            <a href={resume} download="Minsung's Resume" className="btn btn-primary">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/>
               </svg>
-              Download CV
+              Download Resume
             </a>
 
             <a href="#projects" className="btn btn-secondary">
@@ -82,7 +74,7 @@ function App() {
           </div>
 
           <div className="social-row">
-            <a href="www.linkedin.com/in/minsung-kim-ab5552340" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/minsung-kim-ab5552340/" aria-label="LinkedIn">
               LinkedIn
             </a>
 
@@ -100,37 +92,13 @@ function App() {
 
         <div className="scroll-tick"></div>
       </section>
+
       <section id="about">
         <AboutSection />
       </section>
-      <section id="projects" className="projects">
-        <h2 className="projects-heading">My Projects</h2>
 
-        <div className="projects-grid">
-          <ProjectCard
-            image={UofTImage}
-            title="UofT Student Life Tracker"
-            description="A full-stack web application that helps University of Toronto students organize schedules, deadlines, and campus resources. Built with React, Express.js, PostgreSQL, and deployed on Render."
-            link="https://uoft-student-life-tracker.onrender.com/"
-          />
-
-          <ProjectCard
-            image="https://placehold.co/600x375/1d1e22/6c6e75?text=Portfolio"
-            title="Personal Portfolio Website"
-            description="A responsive portfolio website built with React to showcase my projects, technical skills, and experience while learning modern frontend development."
-            link="#"
-          />
-
-          <ProjectCard
-            image="https://placehold.co/600x375/1d1e22/6c6e75?text=Coming+Soon"
-            title="More Projects Coming Soon"
-            description="I'm continuously building new software projects to strengthen my skills in web development, software engineering, and computer science."
-            link="#"
-          />
-        </div>
-      </section>
       <section id="experience" className="experience">
-        <h2 className="projects-heading">Experience & Education</h2>
+        <h2 className="projects-heading">Experience</h2>
 
         <div className="projects-grid">
           <InfoCard
@@ -140,7 +108,27 @@ function App() {
             date="May 2026 – Present"
             description="Provide technical support for students experiencing network connectivity issues, including Wi-Fi, Ethernet, and device registration. Troubleshoot campus internet problems while delivering professional customer service."
           />
+          <InfoCard
+            category="Experience"
+            title="Hack Canada "
+            subtitle="SPUR Innovation"
+            date="March 2026"
+            description="During this hackathon at Waterloo, we built Transit Guardian."
+          />
+          <InfoCard
+            category="Experience"
+            title="Hack the Student Life 2026"
+            subtitle="AWS Organization"
+            date="Placeholder Date"
+            description="Placeholder description of responsibilities and accomplishments in this role."
+          />
+        </div>
+      </section>
 
+      <section id="education" className="education">
+        <h2 className="projects-heading">Education</h2>
+
+        <div className="projects-grid education-grid">
           <InfoCard
             category="Education"
             title="University of Toronto"
@@ -155,6 +143,33 @@ function App() {
             subtitle="University of Toronto"
             date="$50,000 Entrance Scholarship"
             description="Awarded a $50,000 entrance scholarship in recognition of strong academic achievement and leadership."
+          />
+        </div>
+      </section>
+
+      <section id="projects" className="projects">
+        <h2 className="projects-heading">My Projects</h2>
+
+        <div className="projects-grid">
+          <ProjectCard
+            image={UofTImage}
+            title="UofT Student Life Tracker"
+            description="A full-stack web application that helps University of Toronto students organize schedules, deadlines, and campus resources. Built with React, Express.js, PostgreSQL, and deployed on Render."
+            link="https://uoft-student-life-tracker.onrender.com/"
+          />
+
+          <ProjectCard
+            image={StarImage}
+            title="Constellation Maker"
+            description="A responsive portfolio website built with React to showcase my projects, technical skills, and experience while learning modern frontend development. It was created as a culminating assignment for my UofT course CSC111. Once deployed, it will show you a random array of stars that you must plot to create an existing constellation."
+            link="https://github.com/MinsungKxm/Constellation-Maker"
+          />
+
+          <ProjectCard
+            image="...."
+            title="Transit Guardian"
+            description=""
+            link="#"
           />
         </div>
       </section>
