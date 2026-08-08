@@ -169,7 +169,7 @@ function App() {
           <ProjectCard
             image={FightImage}
             title="Transit Guardian"
-            description="Developed a full-stack AI-powered safety monitoring system using React, FastAPI, and WebSocket to detect hazardous situations from live camera feeds. Integrated YOLOv8-Pose to identify falls, aggression, erratic movement, crouching, and lying-down events, with real-time incident alerts, automatically generated video clips, and AI-generated dispatch summaries using Google Gemini."
+            description="Built a full-stack AI safety monitoring system with React, FastAPI, and WebSocket to detect hazards from live camera feeds. Integrated YOLOv8-Pose to detect falls, aggression, and erratic movement, with real-time alerts, automated video clips, and AI-generated dispatch summaries using Google Gemini."
             link="https://github.com/MinsungKxm/SubwaySafety"
           />
         </div>
