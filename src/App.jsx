@@ -25,9 +25,6 @@ function App() {
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
         </nav>
-
-        <div className="nav-right">
-        </div>
       </header>
 
       <section className="hero">
@@ -94,6 +91,29 @@ function App() {
         <AboutSection />
       </section>
 
+
+      <section id="education" className="education">
+        <h2 className="projects-heading">Education</h2>
+
+        <div className="projects-grid education-grid">
+          <InfoCard
+            category="Education"
+            title="University of Toronto"
+            subtitle="Honours B.Sc. Computer Science Specialist"
+            date="Expected Graduation: 2029"
+            description="Currently pursuing a Computer Science Specialist at the University of Toronto, with interests in full-stack software development, UI/UX design, and artificial intelligence."
+          />
+
+          <InfoCard
+            category="Award"
+            title="International Scholar Award"
+            subtitle="University of Toronto"
+            date="$50,000 Entrance Scholarship"
+            description="Awarded a $50,000 entrance scholarship in recognition of strong academic achievement and leadership."
+          />
+        </div>
+      </section>
+
       <section id="experience" className="experience">
         <h2 className="projects-heading">Experience</h2>
 
@@ -118,28 +138,6 @@ function App() {
             subtitle="AWS Services"
             date="Placeholder Date"
             description="Our team participated in the Hack the Student Life hackathons, hosted by UofT and AWS services. The theme of the hackathon was solving a problem that can help UofT students or staff using AWS. We created Cluster Grade AI, where the teaching staff, like TAs, can input several works from students to identify the most common errors and where they are, saving time on their grading."
-          />
-        </div>
-      </section>
-
-      <section id="education" className="education">
-        <h2 className="projects-heading">Education</h2>
-
-        <div className="projects-grid education-grid">
-          <InfoCard
-            category="Education"
-            title="University of Toronto"
-            subtitle="Honours B.Sc. Computer Science Specialist"
-            date="Expected Graduation: 2029"
-            description="Currently pursuing a Computer Science Specialist at the University of Toronto, with interests in full-stack software development, UI/UX design, and artificial intelligence."
-          />
-
-          <InfoCard
-            category="Award"
-            title="International Scholar Award"
-            subtitle="University of Toronto"
-            date="$50,000 Entrance Scholarship"
-            description="Awarded a $50,000 entrance scholarship in recognition of strong academic achievement and leadership."
           />
         </div>
       </section>

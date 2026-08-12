@@ -36,6 +36,8 @@ function AboutSection() {
             user-friendly applications while continuously expanding my knowledge
             of modern web technologies.
 
+            
+
             <br /><br />
 
             Recently, I've been developing a Student Life Tracker for University
