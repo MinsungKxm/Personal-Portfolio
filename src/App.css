@@ -234,10 +234,10 @@ section {
 }
 
 .education-grid {
-  grid-template-columns: repeat(2, minmax(0, 318px));
-  justify-content: center;
+  grid-template-columns: 1fr;
+  max-width: 950px;
+  margin: 0 auto;
 }
-
 @media (max-width: 900px) {
   .education-grid {
     grid-template-columns: 1fr;

@@ -92,27 +92,19 @@ function App() {
       </section>
 
 
-      <section id="education" className="education">
-        <h2 className="projects-heading">Education</h2>
+     <section id="education" className="education">
+  <h2 className="projects-heading">Education</h2>
 
-        <div className="projects-grid education-grid">
-          <InfoCard
-            category="Education"
-            title="University of Toronto"
-            subtitle="Honours B.Sc. Computer Science Specialist"
-            date="Expected Graduation: 2029"
-            description="Currently pursuing a Computer Science Specialist at the University of Toronto, with interests in full-stack software development, UI/UX design, and artificial intelligence."
-          />
-
-          <InfoCard
-            category="Award"
-            title="International Scholar Award"
-            subtitle="University of Toronto"
-            date="$50,000 Entrance Scholarship"
-            description="Awarded a $50,000 entrance scholarship in recognition of strong academic achievement and leadership."
-          />
-        </div>
-      </section>
+  <div className="projects-grid education-grid">
+    <InfoCard
+      category="Education"
+      title="University of Toronto"
+      subtitle="Honours B.Sc. Computer Science Specialist"
+      date="Expected Graduation: 2029"
+      description="Currently pursuing a Computer Science Specialist at the University of Toronto, with interests in full-stack software development, UI/UX design, and artificial intelligence. Awarded the International Scholar Award, a $50,000 entrance scholarship from the University of Toronto, in recognition of strong academic achievement and leadership."
+    />
+  </div>
+</section>
 
       <section id="experience" className="experience">
         <h2 className="projects-heading">Experience</h2>
