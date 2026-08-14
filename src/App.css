@@ -238,9 +238,25 @@ section {
   max-width: 950px;
   margin: 0 auto;
 }
+
+.experience-grid {
+  grid-template-columns: 1fr;
+  max-width: 950px;
+  margin: 0 auto;
+}
 @media (max-width: 900px) {
   .education-grid {
     grid-template-columns: 1fr;
     justify-content: stretch;
+  }
+}
+.hackathon-grid {
+  grid-template-columns: repeat(2, minmax(0, 420px));
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .hackathon-grid {
+    grid-template-columns: 1fr;
   }
 }

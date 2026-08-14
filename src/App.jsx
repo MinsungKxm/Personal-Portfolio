@@ -106,33 +106,41 @@ function App() {
   </div>
 </section>
 
-      <section id="experience" className="experience">
-        <h2 className="projects-heading">Experience</h2>
+<section id="experience" className="experience">
+  <h2 className="projects-heading">Experience</h2>
 
-        <div className="projects-grid">
-          <InfoCard
-            category="Experience"
-            title="ResNet Technical Assistant"
-            subtitle="University of Toronto"
-            date="May 2026 – Present"
-            description="Provide technical support for students experiencing network connectivity issues, including Wi-Fi, Ethernet, and device registration. Troubleshoot campus internet problems while delivering professional customer service."
-          />
-          <InfoCard
-            category="Experience"
-            title="Hack Canada "
-            subtitle="SPUR Innovation"
-            date="March 2026"
-            description="Participated in Hack Canada, a 36-hour hackathon focused on solving real Canadian challenges. Built Transit Guardian, a full-stack AI safety monitoring system using React, FastAPI, WebSockets, and YOLOv8-Pose to detect hazards from live camera feeds and provide real-time incident alerts."
-          />
-          <InfoCard
-            category="Experience"
-            title="Hack the Student Life 2026"
-            subtitle="AWS Services"
-            date="Placeholder Date"
-            description="Our team participated in the Hack the Student Life hackathons, hosted by UofT and AWS services. The theme of the hackathon was solving a problem that can help UofT students or staff using AWS. We created Cluster Grade AI, where the teaching staff, like TAs, can input several works from students to identify the most common errors and where they are, saving time on their grading."
-          />
-        </div>
-      </section>
+  <div className="projects-grid experience-grid">
+    <InfoCard
+      category="Experience"
+      title="ResNet Technical Assistant"
+      subtitle="University of Toronto"
+      date="May 2026 – Present"
+      description="Provide technical support across UofT residences by troubleshooting Wi-Fi, Ethernet, and eduroam connectivity issues, assisting with device and gaming console registration, and resolving hardware/network configuration problems. Monitor residential network infrastructure through access-point checks and restore disconnected Ethernet and university phone lines while delivering professional support to residents."
+    />
+  </div>
+</section>
+
+<section id="hackathons" className="experience">
+  <h2 className="projects-heading">Hackathons</h2>
+
+  <div className="projects-grid hackathon-grid">
+    <InfoCard
+      category="Hackathon"
+      title="Hack Canada"
+      subtitle="SPUR Innovation"
+      date="March 2026"
+      description="Participated in Hack Canada, a 36-hour hackathon focused on solving real Canadian challenges. Built Transit Guardian, a full-stack AI safety monitoring system using React, FastAPI, WebSockets, and YOLOv8-Pose to detect hazards from live camera feeds and provide real-time incident alerts."
+    />
+    <InfoCard
+      category="Hackathon"
+      title="Hack the Student Life 2026"
+      subtitle="AWS Services"
+      date="Placeholder Date"
+      description="Our team participated in the Hack the Student Life hackathons, hosted by UofT and AWS services. The theme of the hackathon was solving a problem that can help UofT students or staff using AWS. We created Cluster Grade AI, where the teaching staff, like TAs, can input several works from students to identify the most common errors and where they are, saving time on their grading."
+    />
+  </div>
+</section>
+
 
       <section id="projects" className="projects">
         <h2 className="projects-heading">My Projects</h2>
