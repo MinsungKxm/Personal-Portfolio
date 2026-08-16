@@ -150,7 +150,7 @@ function App() {
             image={UofTImage}
             title="UofT Student Life Tracker"
             description="A full-stack web application that helps University of Toronto students organize schedules, deadlines, and campus resources. Built with React, Express.js, PostgreSQL, and deployed on Render."
-            link="https://uoft-student-life-tracker.onrender.com/"
+            link="http://github.com/MinsungKxm/UofT-Student-Life-Tracker"
           />
 
           <ProjectCard
