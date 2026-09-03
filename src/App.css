@@ -204,8 +204,12 @@ section {
     border-right-color: var(--border);
   }
 }
+.projects {
+  padding: 60px 48px 100px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
 
-.projects,
 .experience,
 .education {
   padding: 60px 48px 100px;
@@ -213,25 +217,13 @@ section {
   margin: 0 auto;
 }
 
-.projects-heading {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  margin: 0 0 48px;
-}
-
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  justify-content: center;
   gap: 24px;
 }
 
-@media (max-width: 900px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 .education-grid {
   grid-template-columns: 1fr;
