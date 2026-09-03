@@ -169,7 +169,7 @@ function App() {
           />
 
           <ProjectCard
-            image={UofTImage}
+            image={PidgeonImage}
             title="Pidgeon Crossing"
             description="A fast-paced arcade game where you control a pigeon navigating a low-poly city, dodging traffic and surviving for as long as possible. Built in Unity with custom movement, dynamic vehicle spawning, camera controls, and a day-night cycle."
             link="https://github.com/MinsungKxm/Pidgeon_Game"
