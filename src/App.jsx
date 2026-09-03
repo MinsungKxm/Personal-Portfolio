@@ -8,6 +8,7 @@ import UofTImage from "./assets/UofT.png";
 import StarImage from "./assets/Constellation.jpg";
 import resume from "./assets/Resume.pdf";
 import FightImage from "./assets/fight.png.webp";
+import PidgeonImage from "./assets/Pidgeon.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -165,6 +166,13 @@ function App() {
             title="WatchLine"
             description="Built a full-stack AI safety monitoring system with React, FastAPI, and WebSocket to detect hazards from live camera feeds. Integrated YOLOv8-Pose to detect falls, aggression, and erratic movement, with real-time alerts, automated video clips, and AI-generated dispatch summaries using Google Gemini."
             link="https://github.com/MinsungKxm/WatchLine"
+          />
+
+          <ProjectCard
+            image={UofTImage}
+            title="Pidgeon Crossing"
+            description="A fast-paced arcade game where you control a pigeon navigating a low-poly city, dodging traffic and surviving for as long as possible. Built in Unity with custom movement, dynamic vehicle spawning, camera controls, and a day-night cycle."
+            link="https://github.com/MinsungKxm/Pidgeon_Game"
           />
         </div>
       </section>
