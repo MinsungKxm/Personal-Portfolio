@@ -10,6 +10,7 @@ import resume from "./assets/Resume.pdf";
 import FightImage from "./assets/fight.png.webp";
 import PidgeonImage from "./assets/Pidgeon.png";
 import MooseImage from "./assets/Moose.png";
+import BulletHellImage from "./BulletHell.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -175,12 +176,12 @@ function App() {
             description="A fast-paced arcade game where you control a pigeon navigating a low-poly city, dodging traffic and surviving for as long as possible. Built in Unity with custom movement, dynamic vehicle spawning, camera controls, and a day-night cycle."
             link="https://github.com/MinsungKxm/Pidgeon_Game"
           />
-
+          
           <ProjectCard
-            image={MooseImage}
-            title="Moose Herd"
-            description="A fixed-camera survival game where you move sideways across the bottom of the screen and throw steaks at randomly spawning animals before they can get past you. Built in Unity with horizontal player controls, projectile collision detection, randomized spawning, and a game-over system."
-            link="YOUR_MOOSE_HERD_GITHUB_LINK_HERE"
+            image={BulletHellImage}
+            title="Bullet Hell"
+            description="A 3D survival shooter where players navigate an arena, evade incoming projectiles, and fight enemies that dynamically track, pursue, and fire toward them. Built in Unity with physics-based movement, player shooting, randomized enemy spawning, multiple enemy variants, collision detection, and enemy targeting behavior."
+            link="https://play.unity.com/en/games/c26c474d-8e0a-495e-ac96-b327f8f61fbe/bullethell"
           />
         </div>
       </section>
