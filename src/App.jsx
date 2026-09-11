@@ -10,7 +10,7 @@ import resume from "./assets/Resume.pdf";
 import FightImage from "./assets/fight.png.webp";
 import PidgeonImage from "./assets/Pidgeon.png";
 import MooseImage from "./assets/Moose.png";
-import BulletHellImage from "./BulletHell.png";
+import BulletHellImage from "./assets/BulletHell.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -176,7 +176,7 @@ function App() {
             description="A fast-paced arcade game where you control a pigeon navigating a low-poly city, dodging traffic and surviving for as long as possible. Built in Unity with custom movement, dynamic vehicle spawning, camera controls, and a day-night cycle."
             link="https://github.com/MinsungKxm/Pidgeon_Game"
           />
-          
+
           <ProjectCard
             image={BulletHellImage}
             title="Bullet Hell"
