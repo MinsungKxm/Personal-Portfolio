@@ -115,10 +115,24 @@ function App() {
         <div className="projects-grid experience-grid">
           <InfoCard
             category="Experience"
+            title="Software Engineer"
+            subtitle="Gen AI Genesis"
+            date="October 2026 – Present"
+            description="Selected for the Software Engineering team for GenAI Genesis, Canada’s largest AI hackathon, contributing to the organization’s technical development efforts. Developing and maintaining internal tools and the GenAI website, collaborating with the engineering team to build and improve technical infrastructure supporting hackathon operations and participants"
+          />
+          <InfoCard
+            category="Experience"
             title="ResNet Technical Assistant"
             subtitle="University of Toronto"
             date="May 2026 – Present"
             description="Provide technical support across UofT residences by troubleshooting Wi-Fi, Ethernet, and eduroam connectivity issues, assisting with device and gaming console registration, and resolving hardware/network configuration problems. Monitor residential network infrastructure through access-point checks and restore disconnected Ethernet and university phone lines while delivering professional support to residents."
+          />
+          <InfoCard
+            category="Experience"
+            title="Student Computing Technican"
+            subtitle="University of Toronto KPE"
+            date="October 2026 – Present"
+            description="Supports UofT's IT team by TPM clearing unused laptops, install and uninstall cybersecurity software among UofT devices and keeping track of computer inventory within UofT Athletic Center. Resolves hardware issues and repairs as well for the teaching staff's devices."
           />
         </div>
       </section>
@@ -127,6 +141,15 @@ function App() {
         <h2 className="projects-heading">Hackathons</h2>
 
         <div className="projects-grid hackathon-grid">
+          <InfoCard
+            category="Hackathon"
+            title="S:HACKS"
+            subtitle="ScotiaBank"
+            date="August 2026"
+            description="Won 2nd place among competing teams by developing a personalized financial-literacy solution for Gen Z, contextualizing online financial advice through projected account balances in their Scotiabank app. Built an interactive React and Tailwind CSS prototype that accepted financial advice through text or screenshots and visualized projected account balances with and without purchases using a dynamic line graph."
+          />
+
+
           <InfoCard
             category="Hackathon"
             title="Hack Canada"
