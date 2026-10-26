@@ -242,12 +242,21 @@ section {
     justify-content: stretch;
   }
 }
+
 .hackathon-grid {
-  grid-template-columns: repeat(2, minmax(0, 420px));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @media (max-width: 900px) {
+  .hackathon-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
   .hackathon-grid {
     grid-template-columns: 1fr;
   }
